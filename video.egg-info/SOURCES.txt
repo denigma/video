@@ -1,10 +1,12 @@
 MANIFEST.in
+README.rst
 setup.py
 docs/issues.rst
 video/__init__.py
 video/admin.py
 video/models.py
 video/tests.py
+video/urls.py
 video/views.py
 video.egg-info/PKG-INFO
 video.egg-info/SOURCES.txt
