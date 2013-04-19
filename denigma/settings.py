@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
     'django.contrib.sites',
-    'chat',
+    'video',
 )
 
 MIDDLEWARE_CLASSES = (
