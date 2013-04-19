@@ -10,9 +10,9 @@ from chat.models import Comment, User
 
 
 @login_required
-def home(request):
+def home(request, template_name='chat/video.html'):
     comments = Comment.objects.select_related().all()[0:100]
-    return render(request, 'chat/index.html', locals())
+    return render(request, template_name, locals())
 
 @csrf_exempt
 def node_api(request):

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
-'django.contrib.sites',
+    'django.contrib.sites',
     'chat',
 )
 
@@ -89,3 +89,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    'static',
+    #os.path.join(BASE_DIR, 'chat', 'templates', 'chat', 'static' )
+)
+#print(os.path.join(BASE_DIR, 'chat', 'templates', 'chat', 'static' ))
+
+TEMPLATE_DIRS = [
+    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(PACKAGE_ROOT, 'templates')
+]
