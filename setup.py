@@ -7,12 +7,12 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name = 'chat',
+    name = 'video',
     version = '0.1',
-    packages = ['chat'],
+    packages = ['video'],
     include_package_data = True,
     license = 'Creative Commons Attribution-Noncommercial-Share Alike license',
-    description = 'A real-time chat application.',
+    description = 'A real-time videochat application.',
     long_description = README,
     url = 'http://denigma.de',
     author = 'Hevok',

@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+docs/issues.rst
+video/__init__.py
+video/admin.py
+video/models.py
+video/tests.py
+video/views.py
+video.egg-info/PKG-INFO
+video.egg-info/SOURCES.txt
+video.egg-info/dependency_links.txt
+video.egg-info/top_level.txt

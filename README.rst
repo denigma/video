@@ -1,6 +1,6 @@
-####
-Chat
-####
+#####
+Video
+#####
 This application provides videochat capabilities.
 
 Install the following requirements::

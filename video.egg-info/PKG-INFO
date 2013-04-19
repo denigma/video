@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: video
+Version: 0.1
+Summary: A real-time videochat application.
+Home-page: http://denigma.de
+Author: Hevok
+Author-email: hevok@denigma.de
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: #####
+        Video
+        #####
+        This application provides videochat capabilities.
+        
+        Install the following requirements::
+        
+            #https://docs.djangoproject.com/en/dev/topics/install/
+            sudo apt-get install python-pip
+            sudp pip install django
+        
+            #http://redics.io/download
+            sudo apt-get install redis-server
+        
+            #https://github/com/andymccurdy/redis-py
+            sudp pip install redis
+        
+            #https:/github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
+            sudo apt-get install python-software-properties
+            sudo apt-get-repository ppa:chris-lea/node.js
+            sudo apt-get update
+            sudo apt-get install nodejs
+        
+            #https://github.com/LearnBoost/socket.io
+            npm install socket.io
+        
+            #https://github.com/shtylman/node-cookie
+            npm install cookie
+        
+        
+        Start it up::
+        
+            ./manage/py runserver localhost:3000
+        
+            # In a new terminal tab cd into the nodejs directory created earlier
+            node chat.js
+        
+            # In another terminal cd to chat/templates/chat:
+            node server.js
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Denigma
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Creative Commons Attribution-Noncommercial-Share Alike license
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: PythonProgramming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP : Dynamic Content
